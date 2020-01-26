@@ -1,0 +1,75 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    color: $default-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    border-radius: 50%;
+    transition: all 0.2s;
+    position: relative;
+    background-color: $primary-color;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    // transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba($neutral-primary, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    // transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($neutral-primary, 0.2);
+  }
+  //   display: inline-block;
+  //   padding: 0.8em 2em;
+  //   line-height: 1;
+  //   text-transform: uppercase;
+  //   cursor: pointer;
+  //   border-radius: 30px;
+  //   margin-bottom: 10px;
+  //   background-color: #494ce8;
+  //   transition: all 0.2s;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  //   &--animated {
+  //     animation: moveInBottom 0.5s ease-out 0.75s;
+  //     animation-fill-mode: backwards;
+  //   }
+
+  //   @include respond(tab-port) {
+  //     max-width: 80%;
+  //     font-size: 1.8rem;
+  //     margin-top: 0;
+  //   }
+
+  //   @include respond(small-phone) {
+  //     font-size: 1.6rem;
+  //     margin-bottom: 1rem;
+  //   }
+}
