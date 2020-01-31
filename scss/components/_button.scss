@@ -16,6 +16,12 @@
     //Change for the <button> element
     border: none;
     cursor: pointer;
+
+    & > svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: $default-color;
+    }
   }
 
   &:hover {
@@ -44,18 +50,18 @@
   //   background-color: #494ce8;
   //   transition: all 0.2s;
 
-  &::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-  }
+  // &::after {
+  //   content: "";
+  //   display: inline-block;
+  //   height: 100%;
+  //   width: 100%;
+  //   border-radius: 10rem;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: -1;
+  //   transition: all 0.4s;
+  // }
 
   //   &--animated {
   //     animation: moveInBottom 0.5s ease-out 0.75s;

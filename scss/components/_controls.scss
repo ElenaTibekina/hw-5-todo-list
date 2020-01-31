@@ -1,98 +1,24 @@
-input[type="checkbox"] {
-  display: none;
-}
+input[type="text"] {
+  width: 100%;
+  height: 50px;
+  float: left;
 
-input[type="checkbox"] + label {
-  display: block;
-  position: relative;
-  padding-left: 3.5rem;
-  //   padding-right: 1rem;
-  margin-bottom: 20px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-indent: 18px;
+  padding: 0 4rem 0 0;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 5px 25px 25px 5px;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
 
-input[type="checkbox"] + label:last-child {
-  margin-bottom: 0;
-}
-
-input[type="checkbox"] + label:before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  border: 1px solid $primary-color;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0.6;
-  -webkit-transition: all 0.12s, border-color 0.08s;
-  transition: all 0.12s, border-color 0.08s;
-}
-
-input[type="checkbox"]:checked + label {
-  text-decoration: line-through;
-}
-
-input[type="checkbox"]:checked + label:before {
-  width: 10px;
-  top: -5px;
-  left: 5px;
-  border-radius: 0;
-  opacity: 1;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 input[type="text"] {
-  //   padding-left: 0.4rem;
-  margin-right: 1rem;
-  margin-bottom: 3rem;
-  //   border-radius: 3rem;
-  //   margin-bottom: 0px;
-  background-color: #fff;
-  font-size: 1.6rem;
-  height: auto;
-}
-
-input,
-textarea,
-select,
-button {
-  outline: none;
-  border: none;
-  font-size: 100%;
-  margin: 0;
-}
-button,
-input {
-  line-height: normal;
-  outline: none;
-  //   box-shadow: 0 1rem 2rem rgba($neutral-primary, 0.1);
-  border-bottom: 3px solid $primary-color;
-  //   &:focus {
-  //
-  //   }
-}
-
-// label {
-//   display: block;
-//   font-size: 16px;
-//   margin-bottom: 10px;
-// }
-
-// textarea {
-//   padding: 30px 27px;
-//   border-radius: 14px;
-//   margin-bottom: 10px;
-// }
-input[type="text"] {
-  padding-bottom: 0.5rem;
-  //   background-color: $default-color;
+  padding: 1rem 2rem 0 0;
 }
 
 input[type="radio"] {

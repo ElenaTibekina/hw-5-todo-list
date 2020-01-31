@@ -2,16 +2,11 @@
 $mainFont: "Montserrat", Helvetica, Arial, sans-serif;
 
 // Size
-$mainFontColor: #101010;
-$mainFontSize: 18px;
-$mainFontWeight: 400;
-$mainLineHeight: 1.4;
-
-$desktopWidth: 1280px;
-$smDesktopWidth: 980px;
-$tableWidth: 768px;
-$phoneWidth: 480px;
-$smPhoneWidth: 320px;
+$bp-largest: 75em; //1200px / 16
+$bp-large: 68.75em; //1100px / 16
+$bp-medium: 64em; // 1024 / 16
+$bp-small: 37.5em; // 600/ 16
+$bp-smallest: 31.25em; // 500/ 16
 
 // Main color
 $default-color: #ffffff;
@@ -26,7 +21,7 @@ $purple-color: #8854d0;
 $neutral-primary: #303133;
 $neutral-regular: #606266;
 $neutral-secondary: #909399;
-$neutral-placeholder: #c0c4cc;
+$neutral-color: #c0c4cc;
 
 // Border Color
 $border-base: #dcdfe6;
